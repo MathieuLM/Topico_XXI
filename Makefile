@@ -2,7 +2,7 @@
 
 SRC_DIR = ./src
 BIN_DIR = ./bin
-BIN_FILES = $(BIN_DIR)/Key.class $(BIN_DIR)/TestKey.class\
+BIN_FILES = $(BIN_DIR)/Key.class\
 			$(BIN_DIR)/Data.class\
 			$(BIN_DIR)/KeyData.class $(BIN_DIR)/PriorityQueue.class\
 			$(BIN_DIR)/SortedList.class\
