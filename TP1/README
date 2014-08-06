@@ -1,0 +1,24 @@
+/* Written by Mathieu Liénard--Mayor, UFRGS, 2014-2 */
+
+Files architecture:
+	graph.cpp: 
+		reads the input file and creates a graph
+	dijkstra.cpp:
+		applies the shortest path algorithm to the given file
+
+Graph implementation choices:
+	1- Adjacency matrix:
+	Matrix[n,n], if i is connected to j then M[i,j]=1
+		bad idea, the matrix usually is pretty empty,
+		so it requires way too much memory
+	2- Adjacency list:
+	Array[n], A[i] is a linked list of the neighbours
+		good idea, but we're not going to modify the graph
+		after its creation, which is the advantage of a list
+	3- Adjacency arrays:
+	Array[n], A[i] is an array of the neighbours
+		even better, using an array makes the access easier
+	4- Forward-star:
+	same Array[n] nut only one Array[m] which is the "fusion" of
+	the n previous arrays
+		chosen solution
